@@ -1,29 +1,77 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
+.container {
   max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.logo{
+  width:62px;
+  height:62px;
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(34, 49, 52, 0.5);
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
+.header-right {
+  float: right;
+  margin-right: -25px;
+  transition: all 0.5s;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .header-left {
   float: left;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
