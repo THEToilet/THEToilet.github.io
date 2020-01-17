@@ -46,7 +46,7 @@ header {
 .header-right {
   float: right;
   margin-right: -25px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .header-right a {
