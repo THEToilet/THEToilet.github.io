@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,qBAAqB;AAKrB,0BAA0B",
+    "sources": [
+        "responsive.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}

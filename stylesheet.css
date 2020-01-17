@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -29,9 +30,9 @@ a {
   opacity: 0.7;
 }
 
-.logo{
-  width:62px;
-  height:62px;
+.logo {
+  width: 62px;
+  height: 62px;
 }
 
 header {
@@ -46,6 +47,7 @@ header {
 .header-right {
   float: right;
   margin-right: -25px;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -55,10 +57,11 @@ header {
   color: white;
   display: block;
   float: left;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.header-right :hover {
+.header-right a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -66,12 +69,245 @@ header {
   float: left;
 }
 
-footer p {
-  color: black;
-  font-size: 12px;
+.html {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #1bd7cf;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.html h4 {
+  color: #107c78;
+}
+
+.javascript {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ffe400;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.javascript h4 {
+  color: #998900;
+}
+
+.ruby {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ff768a;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.ruby h4 {
+  color: #ff1033;
+}
+
+.lua {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #e78750;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.lua h4 {
+  color: #b85319;
+}
+
+.c {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #86b9fc;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.c h4 {
+  color: #227ffa;
+}
+
+.java {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #f33e3e;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.java h4 {
+  color: #bf0c0c;
+}
+
+.python {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #fff784;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.python h4 {
+  color: #fff01e;
+}
+
+.cs {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #87e65c;
+  /*
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 10%);
+    }
+  }
+  */
+}
+
+.cs h4 {
+  color: #50bf1d;
 }
 
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
+footer p {
+  color: black;
+  font-size: 12px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
