@@ -301,6 +301,16 @@ header {
   color: #50bf1d;
 }
 
+.pro {
+  display: block;
+  padding: 0 25px;
+  float: fixed;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -309,5 +319,6 @@ footer {
 footer p {
   color: black;
   font-size: 12px;
+  float: left;
 }
 /*# sourceMappingURL=stylesheet.css.map */
