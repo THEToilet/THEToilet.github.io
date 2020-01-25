@@ -301,7 +301,7 @@ header {
   color: #50bf1d;
 }
 
-.pro {
+.skillset {
   display: block;
   padding: 0 25px;
   float: fixed;
@@ -315,34 +315,28 @@ header {
 
 footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   color: #999;
-  background-color: #222;
-}
-
-footer p {
-  color: white;
-  font-size: 12px;
-  float: left;
+  background-color: #6b450c;
 }
 
 .social-icon {
   vertical-align: top;
   text-align: center;
   display: inline-block;
-  background: rgba(94, 144, 255, 0.75);
+  background: #775f0fc7;
   width: 52px;
   height: 52px;
   padding-top: 13px;
   border-radius: 50%;
-  color: #e3e3e3;
+  color: #977325;
   font-size: 24px;
   margin: 0 15px;
 }
 
 .social-icon:hover{
   color: #e3e3e3;
-  background-color: rgb(94, 144, 255);
+  background-color: rgba(255, 225, 169, 0.5);
 }
 
 .copyright {
