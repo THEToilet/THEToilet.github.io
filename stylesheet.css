@@ -311,14 +311,41 @@ header {
   text-align: center;
 }
 
+/*footer*/
+
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  text-align: center;
+  padding: 40px 0;
+  color: #999;
+  background-color: #222;
 }
 
 footer p {
-  color: black;
+  color: white;
   font-size: 12px;
   float: left;
+}
+
+.social-icon {
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  background: rgba(94, 144, 255, 0.75);
+  width: 52px;
+  height: 52px;
+  padding-top: 13px;
+  border-radius: 50%;
+  color: #e3e3e3;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.social-icon:hover{
+  color: #e3e3e3;
+  background-color: rgb(94, 144, 255);
+}
+
+.copyright {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
