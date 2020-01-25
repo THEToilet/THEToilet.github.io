@@ -85,14 +85,7 @@ header {
   text-align: center;
 }
 
-.skillset-icon p {
-  position: absolute;
-  top: 90%;
-  width: 100%;
-  color: white;
-}
-
-.skillset-icon {
+.skillset-icon img{
   width: 52px;
   height: 52px;
   position: relative;
