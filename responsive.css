@@ -1,4 +1,9 @@
 @charset "UTF-8";
 /* タブレット向け　*/
-/* スマホ向けレイアウト */
-/*# sourceMappingURL=responsive.css.map */
+@media (max-width: 670px) {
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+
+}
