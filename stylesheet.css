@@ -68,6 +68,7 @@ header {
 .header-left {
   float: left;
 }
+
 /*skillset*/
 .skillset {
   display: block;
@@ -86,7 +87,7 @@ header {
 
 .skillset-icon p {
   position: absolute;
-  top: 90px;
+  top: 90%;
   width: 100%;
   color: white;
 }
