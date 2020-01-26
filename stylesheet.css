@@ -70,6 +70,24 @@ header {
 }
 
 /*skillset*/
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+.skillset-list-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding:10% 10%;
+}
+
 .skillset {
   display: block;
 }
@@ -85,16 +103,10 @@ header {
   text-align: center;
 }
 
-.skillset-icon img{
+.skillset-icon img {
   width: 52px;
   height: 52px;
   position: relative;
-}
-
-.skillset-list-container {
-  display: inline-flex;
-  flex-wrap:wrap;
-  align-content:center;
 }
 /*footer*/
 
