@@ -38,6 +38,16 @@ li {
   margin-left: auto;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
 /*
 .logo {
   width: 62px;
@@ -92,7 +102,19 @@ header {
 }
 
 /*-------  ここまでheader  --------*/
-/*skillset*/
+.top-wrapper {
+  padding-top: 100px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+/*----------about me--------------*/
+.self-introduce {
+  display: block;
+}
+
+/*------------about me------------*/
+/*-------------skillset----------*/
 .heading {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -138,12 +160,67 @@ header {
   position: relative;
 }
 
-/*footer*/
+/*---------works---------------*/
+.works-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
+}
+
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper :after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display: none;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.active {
+  display: block;
+}
+
+/*----------works end--------------*/
+/*--------------footer------------*/
 footer {
   text-align: center;
   padding: 20px 0;
   color: #999;
   background-color: #6b450c;
+}
+
+.footer-head {
+  color: white;
 }
 
 .social-icon {
@@ -157,7 +234,7 @@ footer {
   border-radius: 50%;
   color: #977325;
   font-size: 24px;
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 .social-icon:hover {

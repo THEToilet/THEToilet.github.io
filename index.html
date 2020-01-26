@@ -14,7 +14,7 @@
 
 <body>
 
-  <!--header-->
+  <!-----------------------header------------------------------->
   <header>
     <div class="container">
       <div class="header-title">
@@ -23,40 +23,42 @@
       <div class="header-menu">
         <ul class="header-menu-right">
           <li>
-            <a href="#stamps">About Me</a>
+            <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#interview">Skill Set</a>
+            <a href="#skill-set">Skill Set</a>
           </li>
           <li>
-            <a href="#contact">Works</a>
+            <a href="#works">Works</a>
           </li>
           <li>
-            <a href="#confdct">Link</a>
+            <a href="#link">Link</a>
           </li>
         </ul>
       </div>
     </div>
   </header>
-  <!--header-end-->
+  <!----------------------------header-end--------------------------->
 
   <div class="top-wrapper">
-    <div class="container">
-      <h1>Here is the WebSite.</h1>
+      <h2>Here is the WebSite.</h2>
       <p>ここはサイトです</p>
       <img src="img/toilet_kirei.png" />
+  </div>
+
+  <!------------------------------About Me----------------------------->
+  <div id="about-me" class="heading">
+    <h2>About Me</h2>
+    <div class="self-introduce">
+      <img id="bubble-icon" src="img/bubble1.png" alt="bubble">
+      <p>The Toilet</p>
     </div>
   </div>
+  <!---------------------------About Me end----------------------------->
 
-  <!--About Me-->
-  <div class="heading">
-    <h2>About Me</h2>
-  </div>
-  <!--About Me end-->
+  <!----------------------------skillset----------------------------------->
 
-  <!--skillset-->
-
-  <div class="heading">
+  <div id="skill-set" class="heading">
     <h2>SkillSet</h2>
   </div>
   <div class="skillset-list-container">
@@ -161,37 +163,50 @@
       </div>
     </div>
   </div>
-  <!--skillset end-->
+  <!------------------------------skillset end------------------------------------------------>
 
-  <!--Works-->
-  <div class="heading">
-    <h2>Works</h2>
+  <!---------------------------------Works----------------------------------->
+  <div id="works" class="works-wrapper">
+    <div class="heading">
+      <h2>Works</h2>
+    </div>
+    <div class="change-btn-wrapper">
+      <div class="change-btn prev-btn">← 前へ</div>
+      <div class="change-btn next-btn">次へ →</div>
+    </div>
+    <ul class="slides">
+      <li class="slide active"><img src="img/toilet_kirei.png"></li>
+      <li class="slide"><img src="img/toilet_kirei.png"></li>
+      <li class="slide"><img src="img/toilet_kirei.png"></li>
+      <li class="slide"><img src="img/toilet_kirei.png"></li>
+      <li class="slide"><img src="img/toilet_kirei.png"></li>
+    </ul>
   </div>
-  <!--Works end-->
+  <!-----------------------------------Works end----------------------------------->
 
-  <!--Link-->
-  <div class="heading">
+  <!--------------------------------Link----------------------------------------->
+  <div id="link" class="heading">
     <h2>Link</h2>
   </div>
-  <!--Link end-->
+  <!--------------------------------Link end------------------------------------->
 
-  <!--footer-->
+  <!-------------------------------footer--------------------------------------->
   <footer>
-    <div class="container">
+    <div class="footer-head">
       <p>“Where is a bathroom?”</p>
-      <div class="follow-us">
-        <a href="https://github.com/THEToilet" class="social-icon" target='_blank'>
-          <span class="fa fa-github"></span>
-        </a>
-        <a href="https://den3.sakura.ne.jp/" class="social-icon" target='_blank'>
-          <span class="fa fa-twitter"></span>
-        </a>
-      </div>
-      <div class="copyright">©2020-THEToilet
-      </div>
+    </div>
+    <div class="follow-us">
+      <a href="https://github.com/THEToilet" class="social-icon" target='_blank'>
+        <span class="fa fa-github"></span>
+      </a>
+      <a href="https://den3.sakura.ne.jp/" class="social-icon" target='_blank'>
+        <span class="fa fa-twitter"></span>
+      </a>
+    </div>
+    <div class="copyright">©2020-THEToilet
     </div>
   </footer>
-  <!--footer end-->
+  <!------------------------------footer end------------------------------------------>
 
   <script type="text/javascript" src="common.js"></script>
 </body>

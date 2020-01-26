@@ -1,4 +1,13 @@
 $(function() {
+  function toggleChangeBtn() {
+    var slideIndex = $(".slide").index($(".active"));
+    $(".change-btn").show();
+    if (slideIndex == 0) {
+      $(".prev-btn").hide();
+    } else if (slideIndex == $(".slide").length - 1) {
+      $(".next-btn").hide();
+    }
+  }
   // SNSボタン
   $(".social-icon").hover(
     function() {
@@ -40,7 +49,18 @@ $(function() {
       {
         scrollTop: position
       },
-      500
+      300
     );
+  });
+
+  $(".change-btn").click(function() {
+    var $displaySlide = $(".active");
+    $displaySlide.removeClass("active");
+    if ($(this).hasClass("next-btn")) {
+      $displaySlide.next().addClass("active");
+    } else {
+      $displaySlide.prev().addClass("active");
+    }
+    toggleChangeBtn();
   });
 });
