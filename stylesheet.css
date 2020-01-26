@@ -1,76 +1,98 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
+@charset "UTF-8";
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
 }
 
 a {
   text-decoration: none;
+  color: #323a45;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a a:hover {
+  color: #5983ff;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-size: cover;
-  color: black;
-  text-align: center;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-}
-
+/*
 .logo {
   width: 62px;
   height: 62px;
 }
-
+*/
+/*-------  ここからheader  --------*/
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.5);
+  height: 50px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
-.header-right {
+.header-title {
+  float: left;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+  cursor: pointer;
+}
+
+.header-menu-right {
   float: right;
-  margin-right: -25px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.header-left {
+.header-menu-right li {
   float: left;
 }
 
+.header-menu-right a {
+  color: #323a45;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header-menu-right a:hover {
+  color: #5983ff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/*-------  ここまでheader  --------*/
 /*skillset*/
-
 .heading {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -81,11 +103,16 @@ header {
 .heading h2 {
   font-weight: normal;
 }
+
 .skillset-list-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-wrap: wrap;
-  align-content: center;
-  padding:10% 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10% 10%;
 }
 
 .skillset {
@@ -93,6 +120,8 @@ header {
 }
 
 .skillset-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -108,8 +137,8 @@ header {
   height: 52px;
   position: relative;
 }
-/*footer*/
 
+/*footer*/
 footer {
   text-align: center;
   padding: 20px 0;

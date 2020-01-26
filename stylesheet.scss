@@ -1,141 +1,158 @@
-@import "_variables.scss";
-
-@mixin card($color) {
-  padding: 40px 28px;
-  margin: 16px 8px;
-  display: inline-block;
-  border-radius: 3px;
-  background-color: $color;
-  /*
-  img {
-    margin: 16px auto 20px;
-    display: block;
-  }
-  a {
-    padding: 16px 32px;
-    background-color: #ffffff;
-    border-radius: 26px;
-    display: inline-block;
-    color: $color;
-    &:hover {
-      color: #ffffff;
-      background-color: darken($color, 10%);
-    }
-  }
-  */
-  h4 {
-    color: darken($color, 20%);
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
 }
-
 a {
   text-decoration: none;
+  color: #323a45;
+  transition: all 0.3s;
+  a:hover {
+    color: #5983ff;
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-size: cover;
-  color: black;
-  text-align: center;
-  p {
-    opacity: 0.7;
-  }
-}
 
+/*
 .logo {
   width: 62px;
   height: 62px;
 }
-
+*/
+/*-------  ここからheader  --------*/
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.5);
+  height: 50px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
-  transition: all 0.2s;
-
-  a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-  }
-}
-
-.header-left {
+.header-title {
   float: left;
 }
 
-.html {
-  @include card($html);
-}
-.javascript {
-  @include card($javascript);
-}
-.ruby {
-  @include card($ruby);
-}
-.lua {
-  @include card($lua);
-}
-.c {
-  @include card($c);
-}
-.java {
-  @include card($java);
-}
-.python {
-  @include card($python);
-}
-.cs {
-  @include card($cs);
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+  cursor: pointer;
 }
 
-.pro{
-  display: block;
-  padding: 0 25px;
-  float: fixed;
-  transition: all 0.5s;
-  border-bottom: 1px solid #eee;
+.header-menu-right {
+  float: right;
+  li {
+    float: left;
+  }
+  a {
+    color: #323a45;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #5983ff;
+    transition: color 0.3s;
+  }
+}
+
+/*-------  ここまでheader  --------*/
+
+/*skillset*/
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
   text-align: center;
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  p {
-    color: black;
-    font-size: 12px;
-    float:left;
-  }
+.heading h2 {
+  font-weight: normal;
 }
+.skillset-list-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 10% 10%;
+}
+
+.skillset {
+  display: block;
+}
+
+.skillset-container {
+  display: inline-flex;
+}
+
+.skillset-wrapper {
+  padding-top: 20px;
+  height: 300px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.skillset-icon img {
+  width: 52px;
+  height: 52px;
+  position: relative;
+}
+/*footer*/
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  background-color: #6b450c;
+}
+
+.social-icon {
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  background: #775f0fc7;
+  width: 52px;
+  height: 52px;
+  padding-top: 13px;
+  border-radius: 50%;
+  color: #977325;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.social-icon:hover {
+  color: #e3e3e3;
+  background-color: rgba(255, 225, 169, 0.5);
+}
+
+.copyright {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=stylesheet.css.map */

@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <title>Toilet Paper</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!--アイコン-->
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="responsive" href="responsive.css" />
@@ -16,15 +17,24 @@
   <!--header-->
   <header>
     <div class="container">
-      <div class="header-left">
-        <a href="index.html">
-          <img class="logo" src="img/toilet_kirei.png" /></a>
+      <div class="header-title">
+        <div id="top-btn" class="header-logo">Toilet Paper</div>
       </div>
-
-      <div class="header-right">
-        <a href="production_object.html">制作物</a>
-        <a href="https://den3.sakura.ne.jp" class="make" target="_blank">HP</a>
-        <a href="https://github.com/THEToilet" class="link" target="_blank">リンク</a>
+      <div class="header-menu">
+        <ul class="header-menu-right">
+          <li>
+            <a href="#stamps">About Me</a>
+          </li>
+          <li>
+            <a href="#interview">Skill Set</a>
+          </li>
+          <li>
+            <a href="#contact">Works</a>
+          </li>
+          <li>
+            <a href="#confdct">Link</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -58,27 +68,27 @@
             <div class="skillset-icon">
               <img src="./img/C.svg" alt="C">
             </div>
-            <p>HTML & CSS</p>
+            <p>C</p>
             <p class="txt-contents">teiｄｆｓｓｓｓｓｇｄｓｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇｇ</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/C++.svg" alt="C++"> </div>
-            <p>jQuery</p>
+            <p>C++</p>
             <p class="txt-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。
               アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/CS.svg" alt="C#"> </div>
-            <p>Ruby</p>
+            <p>C#</p>
             <p class="txt-contents">オープンソースの動的なプログラミング言語で、
               シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/Java-4.svg" alt="Java"> </div>
-            <p>PHP</p>
+            <p>Java</p>
             <p class="txt-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
           </div>
         </div>
@@ -91,27 +101,27 @@
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/html-5.svg" alt="HTML"> </div>
-            <p>HTML & CSS</p>
+            <p>HTML</p>
             <p class="txt-contents">Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/css3.svg" alt="CSS"> </div>
-            <p>jQuery</p>
+            <p>CSS</p>
             <p class="txt-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。
               アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/lua-5.svg" alt="Lua"> </div>
-            <p>Ruby</p>
+            <p>Lua</p>
             <p class="txt-contents">オープンソースの動的なプログラミング言語で、
               シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/blender.svg" alt="blender"> </div>
-            <p>PHP</p>
+            <p>Blender</p>
             <p class="txt-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
           </div>
         </div>
@@ -124,27 +134,27 @@
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/git.svg" alt="Git"> </div>
-            <p>HTML & CSS</p>
+            <p>Git</p>
             <p class="txt-contents">Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/unity.svg" alt="Unity"> </div>
-            <p>jQuery</p>
+            <p>Unity</p>
             <p class="txt-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。
               アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/python-5.svg" alt="Python"> </div>
-            <p>Ruby</p>
+            <p>Python</p>
             <p class="txt-contents">オープンソースの動的なプログラミング言語で、
               シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
           </div>
           <div class="skillset">
             <div class="skillset-icon">
               <img src="./img/javascript-4.svg" alt="JavaScript"> </div>
-            <p>PHP</p>
+            <p>JavaScript</p>
             <p class="txt-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
           </div>
         </div>
@@ -181,7 +191,9 @@
       </div>
     </div>
   </footer>
+  <!--footer end-->
+
+  <script type="text/javascript" src="common.js"></script>
 </body>
-<!--footer end-->
 
 </html>
