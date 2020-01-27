@@ -1,4 +1,5 @@
 $(function() {
+  // slideについて
   function toggleChangeBtn() {
     var slideIndex = $(".slide").index($(".active"));
     $(".change-btn").show();
@@ -42,6 +43,7 @@ $(function() {
     );
   });
 
+  // ボタンを押した場所へ動く
   $("header a").click(function() {
     var id = $(this).attr("href");
     var position = $(id).offset().top;
@@ -49,10 +51,11 @@ $(function() {
       {
         scrollTop: position
       },
-      300
+      600
     );
   });
 
+  // スライドを動かす
   $(".change-btn").click(function() {
     var $displaySlide = $(".active");
     $displaySlide.removeClass("active");
