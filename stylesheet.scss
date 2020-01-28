@@ -58,7 +58,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: rgb(36, 137, 196);
   line-height: 50px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -69,7 +69,7 @@ header {
 }
 
 .header-logo {
-  color: #777;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 22px;
   font-family: "Dosis", sans-serif;
@@ -82,13 +82,13 @@ header {
     float: left;
   }
   a {
-    color: #323a45;
+    color: #ffffff;
     font-weight: 700;
     padding: 10px;
     text-decoration: none;
   }
   a:hover {
-    color: #5983ff;
+    color: #104600;
     transition: color 0.3s;
   }
 }
@@ -96,7 +96,8 @@ header {
 /*-------  ここまでheader  --------*/
 
 .top-wrapper {
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 100px;
   color: #5f5d60;
   text-align: center;
 }
@@ -205,15 +206,18 @@ header {
 /*----------works end--------------*/
 
 /*--------Link---------------------*/
-
+.den3-link{
+  display: inline-block;
+  padding:20px 20px;
+}
 /*-----------Link end------------------*/
 /*--------------footer------------*/
 
 footer {
   text-align: center;
   padding: 20px 0;
-  color: #999;
-  background-color: #6b450c;
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 137, 196);
 }
 
 .footer-head {
@@ -224,19 +228,19 @@ footer {
   vertical-align: top;
   text-align: center;
   display: inline-block;
-  background: #775f0fc7;
+  background: rgb(20, 175, 223);
   width: 52px;
   height: 52px;
   padding-top: 13px;
   border-radius: 50%;
-  color: #977325;
+  color: #ffffff;
   font-size: 24px;
   margin: 10px 15px;
 }
 
 .social-icon:hover {
   color: #e3e3e3;
-  background-color: rgba(255, 225, 169, 0.5);
+  background-color: rgb(20, 175, 223);
 }
 
 .copyright {
