@@ -1,14 +1,4 @@
 $(function() {
-  // slideについて
-  function toggleChangeBtn() {
-    var slideIndex = $(".slide").index($(".active"));
-    $(".change-btn").show();
-    if (slideIndex == 0) {
-      $(".prev-btn").hide();
-    } else if (slideIndex == $(".slide").length - 1) {
-      $(".next-btn").hide();
-    }
-  }
   // SNSボタン
   $(".social-icon").hover(
     function() {
@@ -33,6 +23,17 @@ $(function() {
     }
   );
 
+  //slick
+  $(".works-container").slick({
+    // アクセシビリティ。左右ボタンで画像の切り替えをできるかどうか
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    // 中央のpadding
+    centerPadding: "160px"
+  });
+
   // トップへ戻るボタン
   $("#top-btn").click(function() {
     $("html,body").animate(
@@ -53,17 +54,5 @@ $(function() {
       },
       600
     );
-  });
-
-  // スライドを動かす
-  $(".change-btn").click(function() {
-    var $displaySlide = $(".active");
-    $displaySlide.removeClass("active");
-    if ($(this).hasClass("next-btn")) {
-      $displaySlide.next().addClass("active");
-    } else {
-      $displaySlide.prev().addClass("active");
-    }
-    toggleChangeBtn();
   });
 });
