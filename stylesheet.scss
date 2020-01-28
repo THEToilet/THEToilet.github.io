@@ -102,9 +102,13 @@ header {
 }
 
 /*----------about me--------------*/
-
-.self-introduce {
-  display: block;
+#bubble-icon{
+  display: inline-block;
+  margin-left:-20px;
+  margin-right: 140px;
+}
+#self-introduce-inform{
+  display: inline-block;
 }
 
 /*------------about me------------*/
@@ -124,7 +128,7 @@ header {
 
 .skillset-list-container {
   align-content: center;
-  padding: 10% 10%;
+  padding: 0 10%;
 }
 
 .skillset {
