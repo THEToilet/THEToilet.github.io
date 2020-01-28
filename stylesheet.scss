@@ -121,24 +121,21 @@ header {
 .heading h2 {
   font-weight: normal;
 }
+
 .skillset-list-container {
-  display: inline-flex;
-  flex-wrap: wrap;
   align-content: center;
   padding: 10% 10%;
 }
 
 .skillset {
-  display: block;
-}
-
-.skillset-container {
-  display: inline-flex;
+  display: inline-block;
+  padding:0 60px;
 }
 
 .skillset-wrapper {
-  padding-top: 20px;
-  height: 300px;
+  display:block;
+  padding-top: 50px;
+  height: 200px;
   background-color: #f7f7f7;
   text-align: center;
 }
