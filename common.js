@@ -31,7 +31,6 @@ $(function() {
     autoplaySpeed: 5000,
     dots: true,
     // 中央のpadding
-    centerPadding: "160px"
   });
 
   // トップへ戻るボタン

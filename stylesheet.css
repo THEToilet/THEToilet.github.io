@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 body {
   margin: 0;
   font-weight: 400;
@@ -102,6 +107,17 @@ header {
   transition: color 0.3s;
 }
 
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
 /*-------  ここまでheader  --------*/
 .top-wrapper {
   padding-top: 120px;
@@ -123,17 +139,6 @@ header {
 
 /*------------about me------------*/
 /*-------------skillset----------*/
-.heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  color: #5f5d60;
-  text-align: center;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
 .skillset-list-container {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -161,19 +166,13 @@ header {
 
 /*---------works---------------*/
 .works-container {
-  display: inline-block;
-  padding: 20px 20px;
-  margin: 300px 300px;
-  background-color: #e7e4e4;
+  margin: 100px auto;
+  width: 80%;
 }
 
-.works-container p {
-  background-color: #999999;
-  padding: 20px;
-}
-
-.works-container p a {
-  color: white;
+.works-container img {
+  height: auto;
+  width: 100%;
 }
 
 .slick-prev:before,
@@ -181,32 +180,6 @@ header {
   color: #000;
 }
 
-/*
-.black_jack-work {
-  display: inline-block;
-  padding: 20px 20px;
-  background-color: rgb(231, 228, 228);
-  p {
-    background-color: rgb(153, 153, 153);
-    padding: 20px;
-    a {
-      color: rgb(255, 255, 255);
-    }
-  }
-}
-.adventure-of-sweets-link {
-  display: inline-block;
-  padding: 20px 20px;
-  background-color: rgb(231, 228, 228);
-  p {
-    background-color: rgb(153, 153, 153);
-    padding: 20px;
-    a {
-      color: rgb(255, 255, 255);
-    }
-  }
-}
-*/
 /*----------works end--------------*/
 /*--------Link---------------------*/
 .den3-link {

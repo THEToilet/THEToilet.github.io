@@ -1,3 +1,7 @@
+* {
+  min-height: 0;
+  min-width: 0;
+}
 body {
   margin: 0;
   font-weight: 400;
@@ -93,6 +97,16 @@ header {
   }
 }
 
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
 /*-------  ここまでheader  --------*/
 
 .top-wrapper {
@@ -115,17 +129,6 @@ header {
 /*------------about me------------*/
 
 /*-------------skillset----------*/
-
-.heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  color: #5f5d60;
-  text-align: center;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
 
 .skillset-list-container {
   align-content: center;
@@ -154,11 +157,10 @@ header {
 /*---------works---------------*/
 .works-container {
   padding: 0 20px;
-  margin:0 300px;
+  margin: 0 300px;
   background-color: rgb(231, 228, 228);
-  img{
+  img {
     display: inline-block;
-    text-align: center;
   }
   p {
     background-color: rgb(153, 153, 153);
@@ -174,7 +176,6 @@ header {
   color: #000;
 }
 
-*/
 /*----------works end--------------*/
 
 /*--------Link---------------------*/
